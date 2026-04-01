@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: "Lexci is an AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities to power the next generation of digital infrastructure.",
 };
 
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedDots from "@/components/AnimatedDots";
@@ -37,6 +38,18 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        
+        {/* Chatling AI Chatbot Integration */}
+        <Script id="chatling-config" strategy="afterInteractive">
+          {`window.chtlConfig = { chatbotId: "7646939173" }`}
+        </Script>
+        <Script
+          async
+          data-id="7646939173"
+          id="chtl-script"
+          src="https://chatling.ai/js/embed.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
