@@ -124,6 +124,7 @@ export default function Home() {
                     { label: "Cybersecurity", href: "/platform/cybersecurity" },
                     { label: "InMind AI", href: "/platform/inmind" },
                   ]},
+                  { label: "Services", href: "#services" },
                   { label: "Capabilities", href: "/capabilities" },
                   { label: "Clients", href: "/clients" },
                   { label: "About", href: "/about" },
@@ -376,7 +377,7 @@ export default function Home() {
         </section>
 
         {/* CAPABILITIES */}
-        <section className="py-24 md:py-32 relative z-10 bg-black overflow-hidden">
+        <section id="services" className="py-24 md:py-32 relative z-10 bg-black overflow-hidden">
           <div className="absolute top-[20%] right-[-5%] w-[500px] h-[500px] bg-blue-600/[0.04] rounded-full blur-[150px] pointer-events-none" />
           <div className="absolute bottom-[10%] left-[-5%] w-[400px] h-[400px] bg-purple-600/[0.03] rounded-full blur-[130px] pointer-events-none" />
           <div className="max-w-7xl mx-auto px-6 md:px-8 relative">
