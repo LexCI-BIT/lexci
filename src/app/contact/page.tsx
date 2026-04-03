@@ -1,5 +1,6 @@
+import ContactForm from "@/components/ContactForm";
 import FadeIn from "@/components/FadeIn";
-import { Mail, MapPin, Globe, ArrowRight, Send } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -41,52 +42,7 @@ export default function ContactPage() {
             <div className="lg:col-span-7">
               <FadeIn delay={0.2}>
                 <div className="premium-card p-8 md:p-12 relative group">
-                  <form className="space-y-8" action="#">
-                    <div className="grid md:grid-cols-2 gap-8">
-                      <div className="space-y-2">
-                        <label className="text-[10px] font-medium tracking-[0.2em] text-white/40 uppercase ml-1">Full Name</label>
-                        <input
-                          type="text"
-                          placeholder="John Doe"
-                          className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-sm font-light text-white placeholder:text-white/20 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.05] transition-all duration-300"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-[10px] font-medium tracking-[0.2em] text-white/40 uppercase ml-1">Email Address</label>
-                        <input
-                          type="email"
-                          placeholder="john@example.com"
-                          className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-sm font-light text-white placeholder:text-white/20 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.05] transition-all duration-300"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-medium tracking-[0.2em] text-white/40 uppercase ml-1">Subject</label>
-                      <input
-                        type="text"
-                        placeholder="Inquiry regarding Cybersecurity"
-                        className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-sm font-light text-white placeholder:text-white/20 focus:outline-none focus:border-purple-500/50 focus:bg-white/[0.05] transition-all duration-300"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <label className="text-[10px] font-medium tracking-[0.2em] text-white/40 uppercase ml-1">Message</label>
-                      <textarea
-                        rows={5}
-                        placeholder="Tell us about your project or inquiry..."
-                        className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-sm font-light text-white placeholder:text-white/20 focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.05] transition-all duration-300 resize-none"
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="aiera-button-solid w-full py-4 text-sm font-semibold flex items-center justify-center gap-3 group"
-                    >
-                      Send Message
-                      <Send className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                    </button>
-                  </form>
+                  <ContactForm />
                 </div>
               </FadeIn>
             </div>
@@ -113,7 +69,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                           <p className="text-[10px] font-medium tracking-widest text-white/30 uppercase mb-1">General inquiries</p>
-                          <a href="mailto:lexciinovations@gmail.com" className="text-white/70 hover:text-white transition-colors font-light text-xs sm:text-sm">lexciinovations@gmail.com</a>
+                          <a href="mailto:lexciinnovation@gmail.com" className="text-white/70 hover:text-white transition-colors font-light text-xs sm:text-sm">lexciinnovation@gmail.com</a>
                         </div>
                       </div>
                     </div>
