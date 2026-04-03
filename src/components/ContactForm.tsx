@@ -15,7 +15,7 @@ export default function ContactForm() {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch("https://formspree.io/f/lexciinnovation@gmail.com", {
+            const response = await fetch("https://formspree.io/f/xlgopelg", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
