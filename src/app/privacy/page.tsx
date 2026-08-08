@@ -1,7 +1,6 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 
 export default function PrivacyPolicyPage() {
@@ -75,7 +74,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      <Footer />
+    
     </div>
   );
 }
