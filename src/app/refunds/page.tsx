@@ -1,7 +1,6 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 
 export default function RefundsAndCancellationPage() {
@@ -160,7 +159,6 @@ export default function RefundsAndCancellationPage() {
       </section>
 
       <div className="shimmer-line opacity-50" />
-      <Footer />
     </div>
   );
 }
