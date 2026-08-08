@@ -1,7 +1,6 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 
 export default function TermsAndConditionsPage() {
@@ -180,7 +179,6 @@ export default function TermsAndConditionsPage() {
       </section>
 
       <div className="shimmer-line opacity-50" />
-      <Footer />
     </div>
   );
 }
