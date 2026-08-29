@@ -1,10 +1,38 @@
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 import Link from "next/link";
 import { ArrowRight, Shield, Brain, Cpu, Globe2, Activity, Zap } from "lucide-react";
 
-export const metadata = {
-  title: "About Us | Lexci",
-  description: "Lexci is an AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities.",
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Lexci — an AI-native platform built on three core pillars: cybersecurity, intelligent systems, and precision engineering. Offices in Bangalore and Hyderabad, India.",
+  keywords: [
+    "about Lexci",
+    "AI cybersecurity company",
+    "cybersecurity company India",
+    "intelligent systems",
+    "engineering services Bangalore",
+    "Hyderabad tech company",
+    "zero trust architecture",
+    "AI platform",
+  ],
+  openGraph: {
+    title: "About Lexci — AI-Native Cybersecurity & Engineering",
+    description:
+      "Lexci engineers resilient ecosystems capable of anticipating threats and optimizing themselves. Built on cybersecurity, intelligent systems, and precision engineering.",
+    url: "https://lexci.in/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Lexci — AI-Native Cybersecurity & Engineering",
+    description:
+      "Lexci engineers resilient ecosystems capable of anticipating threats and optimizing themselves.",
+  },
+  alternates: {
+    canonical: "https://lexci.in/about",
+  },
 };
 
 export default function AboutPage() {

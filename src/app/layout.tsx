@@ -9,14 +9,71 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Lexci - AI-Powered Security Infrastructure",
-  description: "Lexci is an AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities to power the next generation of digital infrastructure.",
+  metadataBase: new URL("https://lexci.in"),
+  title: {
+    default: "Lexci — AI-Powered Security Infrastructure",
+    template: "%s | Lexci",
+  },
+  description:
+    "Lexci is an AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities to power the next generation of digital infrastructure.",
+  keywords: [
+    "Lexci",
+    "AI cybersecurity",
+    "cybersecurity platform",
+    "AI security",
+    "zero trust",
+    "cloud security",
+    "threat detection",
+    "InMind AI",
+    "web development",
+    "app development",
+    "engineering services",
+    "digital infrastructure",
+    "Bangalore",
+    "Hyderabad",
+    "India",
+  ],
+  authors: [{ name: "Lexci", url: "https://lexci.in" }],
+  creator: "Lexci",
+  publisher: "Lexci",
+  applicationName: "Lexci",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://lexci.in",
+    siteName: "Lexci",
+    title: "Lexci — AI-Powered Security Infrastructure",
+    description:
+      "An AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities for modern enterprises.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lexci — AI-Powered Security Infrastructure",
+    description:
+      "An AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities for modern enterprises.",
+  },
+  alternates: {
+    canonical: "https://lexci.in",
+  },
 };
 
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedDots from "@/components/AnimatedDots";
+import JsonLd from "@/components/JsonLd";
 
 export default function RootLayout({
   children,
@@ -32,6 +89,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} font-sans antialiased min-h-screen bg-background text-foreground flex flex-col`}
       >
+        <JsonLd />
         <AnimatedDots />
         <Navbar />
         <main className="flex-grow relative z-10">

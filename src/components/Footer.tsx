@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="md:col-span-2 md:col-start-5">
+          <nav aria-label="Platform links" className="md:col-span-2 md:col-start-5">
             <h4 className="text-black/80 font-semibold mb-4 text-[12px] tracking-[0.15em]">PLATFORM</h4>
             <ul className="space-y-2.5">
               {[
@@ -38,9 +38,9 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
-          <div className="md:col-span-2">
+          <nav aria-label="Company links" className="md:col-span-2">
             <h4 className="text-black/80 font-semibold mb-4 text-[12px] tracking-[0.15em]">COMPANY</h4>
             <ul className="space-y-2.5">
               {[
@@ -55,9 +55,9 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
-          <div className="md:col-span-2">
+          <nav aria-label="Legal links" className="md:col-span-2">
             <h4 className="text-black/80 font-semibold mb-4 text-[12px] tracking-[0.15em] leading-4">
               <span className="block">LEGAL</span>
             </h4>
@@ -74,20 +74,29 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
-          <div className="md:col-span-2">
+          <nav aria-label="Social links" className="md:col-span-2">
             <h4 className="text-black/80 font-semibold mb-4 text-[12px] tracking-[0.15em]">CONNECT</h4>
             <ul className="space-y-2.5">
-              {["Twitter", "LinkedIn", "YouTube"].map((social) => (
-                <li key={social}>
-                  <span className="text-black/40 hover:text-black transition-colors text-sm font-light cursor-pointer">
-                    {social}
-                  </span>
+              {[
+                { name: "Twitter", url: "https://twitter.com" },
+                { name: "LinkedIn", url: "https://linkedin.com" },
+                { name: "YouTube", url: "https://youtube.com" },
+              ].map((social) => (
+                <li key={social.name}>
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-black/40 hover:text-black transition-colors text-sm font-light"
+                  >
+                    {social.name}
+                  </a>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
 
         {/* Bottom bar */}

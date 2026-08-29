@@ -1,6 +1,41 @@
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 import { Globe, BookOpen, Smartphone, Cloud, Lock, Brain, ArrowRight } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Engineering Capabilities",
+  description:
+    "Full-spectrum engineering services by Lexci — web development, app development, LMS systems, cloud architecture, cloud security, and AI integration. From concept to deployment.",
+  keywords: [
+    "web development services",
+    "app development India",
+    "LMS systems",
+    "cloud architecture",
+    "cloud security services",
+    "AI integration",
+    "engineering services Bangalore",
+    "full-stack development",
+    "cross-platform apps",
+    "Lexci engineering",
+  ],
+  openGraph: {
+    title: "Lexci Engineering Capabilities",
+    description:
+      "Full-spectrum engineering services designed for modern digital infrastructure. From concept to deployment — we build systems that scale.",
+    url: "https://lexci.in/capabilities",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lexci Engineering Capabilities",
+    description:
+      "Full-spectrum engineering services designed for modern digital infrastructure.",
+  },
+  alternates: {
+    canonical: "https://lexci.in/capabilities",
+  },
+};
 
 export default function CapabilitiesPage() {
   return (

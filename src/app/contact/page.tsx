@@ -1,11 +1,38 @@
+import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import FadeIn from "@/components/FadeIn";
 import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Contact | Lexci",
-  description: "Get in touch with the Lexci engineering team for inquiries regarding autonomous defense and behavioral intelligence.",
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with the Lexci engineering team for inquiries regarding AI-powered cybersecurity, intelligent systems, and engineering services. Offices in Bangalore and Hyderabad, India.",
+  keywords: [
+    "contact Lexci",
+    "cybersecurity consultation",
+    "AI platform demo",
+    "Bangalore office",
+    "Hyderabad office",
+    "enterprise security inquiry",
+    "Lexci engineering team",
+  ],
+  openGraph: {
+    title: "Contact Lexci — Connect with Our Engineering Team",
+    description:
+      "Our engineering team is ready to discuss how our AI-native platform can secure and optimize your digital infrastructure.",
+    url: "https://lexci.in/contact",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Lexci — Connect with Our Engineering Team",
+    description:
+      "Our engineering team is ready to discuss how our AI-native platform can secure and optimize your digital infrastructure.",
+  },
+  alternates: {
+    canonical: "https://lexci.in/contact",
+  },
 };
 
 export default function ContactPage() {

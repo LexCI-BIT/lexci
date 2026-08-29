@@ -1,12 +1,18 @@
-"use client";
-
-import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Terms and Conditions for Lexci Innovations — covering services, payments, intellectual property, cybersecurity, AI solutions, and governing law.",
+  alternates: {
+    canonical: "https://lexci.in/terms",
+  },
+};
 
 export default function TermsAndConditionsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white selection:bg-white/90 selection:text-black" style={{ fontFamily: "'Poppins', sans-serif" }}>
-      <Navbar />
 
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[180px] pointer-events-none mix-blend-screen animate-gradient-drift" />
