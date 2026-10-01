@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lexci.in"),
+  metadataBase: new URL("https://www.lexci.in"),
   title: {
     default: "Lexci — AI-Powered Security Infrastructure",
     template: "%s | Lexci",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Hyderabad",
     "India",
   ],
-  authors: [{ name: "Lexci", url: "https://lexci.in" }],
+  authors: [{ name: "Lexci", url: "https://www.lexci.in" }],
   creator: "Lexci",
   publisher: "Lexci",
   applicationName: "Lexci",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://lexci.in",
+    url: "https://www.lexci.in",
     siteName: "Lexci",
     title: "Lexci — AI-Powered Security Infrastructure",
     description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
       "An AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities for modern enterprises.",
   },
   alternates: {
-    canonical: "https://lexci.in",
+    canonical: "https://www.lexci.in",
   },
 };
 

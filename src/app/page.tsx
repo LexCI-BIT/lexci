@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Lexci — AI-Powered Security Infrastructure for a Scalable World",
     description:
       "A unified platform combining cybersecurity, artificial intelligence, and engineering systems to build, protect, and scale digital ecosystems.",
-    url: "https://lexci.in",
+    url: "https://www.lexci.in",
     type: "website",
   },
   twitter: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "A unified platform combining cybersecurity, AI, and engineering systems to protect and scale digital ecosystems.",
   },
   alternates: {
-    canonical: "https://lexci.in",
+    canonical: "https://www.lexci.in",
   },
 };
 

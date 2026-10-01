@@ -3,8 +3,8 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Lexci",
-    url: "https://lexci.in",
-    logo: "https://lexci.in/favicon.ico",
+    url: "https://www.lexci.in",
+    logo: "https://www.lexci.in/favicon.ico",
     description:
       "Lexci is an AI-native platform integrating cybersecurity, intelligent systems, and engineering capabilities to power the next generation of digital infrastructure.",
     contactPoint: [
@@ -59,7 +59,7 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Lexci",
-    url: "https://lexci.in",
+    url: "https://www.lexci.in",
     description:
       "AI-Powered Security Infrastructure for a Scalable World",
     publisher: {

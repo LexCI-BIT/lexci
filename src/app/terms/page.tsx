@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Terms and Conditions for Lexci Innovations — covering services, payments, intellectual property, cybersecurity, AI solutions, and governing law.",
   alternates: {
-    canonical: "https://lexci.in/terms",
+    canonical: "https://www.lexci.in/terms",
   },
 };
 

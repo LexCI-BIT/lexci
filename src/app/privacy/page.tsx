@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Lexci",
     description:
       "Learn how Lexci collects, uses, and protects your data across our platforms and services.",
-    url: "https://lexci.in/privacy",
+    url: "https://www.lexci.in/privacy",
     type: "website",
   },
   alternates: {
-    canonical: "https://lexci.in/privacy",
+    canonical: "https://www.lexci.in/privacy",
   },
 };
 

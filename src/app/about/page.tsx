@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "About Lexci — AI-Native Cybersecurity & Engineering",
     description:
       "Lexci engineers resilient ecosystems capable of anticipating threats and optimizing themselves. Built on cybersecurity, intelligent systems, and precision engineering.",
-    url: "https://lexci.in/about",
+    url: "https://www.lexci.in/about",
     type: "website",
   },
   twitter: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Lexci engineers resilient ecosystems capable of anticipating threats and optimizing themselves.",
   },
   alternates: {
-    canonical: "https://lexci.in/about",
+    canonical: "https://www.lexci.in/about",
   },
 };
 

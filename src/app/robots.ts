@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/_next/", "/api/"],
       },
     ],
-    sitemap: "https://lexci.in/sitemap.xml",
+    sitemap: "https://www.lexci.in/sitemap.xml",
   };
 }
