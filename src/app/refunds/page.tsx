@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Refund and Cancellation Policy for Lexci Innovations — covering advance payments, project cancellations, milestone-based projects, and refund processing.",
   alternates: {
-    canonical: "https://lexci.in/refunds",
+    canonical: "https://www.lexci.in/refunds",
   },
 };
 

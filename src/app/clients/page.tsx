@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Lexci Clients & Success Stories",
     description:
       "Empowering the world's most innovative enterprises with autonomous defense, behavioral intelligence, and elite engineering capabilities.",
-    url: "https://lexci.in/clients",
+    url: "https://www.lexci.in/clients",
     type: "website",
   },
   twitter: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Empowering innovative enterprises with autonomous defense and behavioral intelligence.",
   },
   alternates: {
-    canonical: "https://lexci.in/clients",
+    canonical: "https://www.lexci.in/clients",
   },
 };
 

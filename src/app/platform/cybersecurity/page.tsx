@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Lexci Cybersecurity — Autonomous Cyber Defense",
     description:
       "A self-evolving security system that continuously monitors, detects, and neutralizes threats in real-time.",
-    url: "https://lexci.in/platform/cybersecurity",
+    url: "https://www.lexci.in/platform/cybersecurity",
     type: "website",
   },
   twitter: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "A self-evolving security system that continuously monitors, detects, and neutralizes threats in real-time.",
   },
   alternates: {
-    canonical: "https://lexci.in/platform/cybersecurity",
+    canonical: "https://www.lexci.in/platform/cybersecurity",
   },
 };
 

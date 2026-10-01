@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Contact Lexci — Connect with Our Engineering Team",
     description:
       "Our engineering team is ready to discuss how our AI-native platform can secure and optimize your digital infrastructure.",
-    url: "https://lexci.in/contact",
+    url: "https://www.lexci.in/contact",
     type: "website",
   },
   twitter: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Our engineering team is ready to discuss how our AI-native platform can secure and optimize your digital infrastructure.",
   },
   alternates: {
-    canonical: "https://lexci.in/contact",
+    canonical: "https://www.lexci.in/contact",
   },
 };
 

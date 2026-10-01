@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Lexci Engineering Capabilities",
     description:
       "Full-spectrum engineering services designed for modern digital infrastructure. From concept to deployment — we build systems that scale.",
-    url: "https://lexci.in/capabilities",
+    url: "https://www.lexci.in/capabilities",
     type: "website",
   },
   twitter: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Full-spectrum engineering services designed for modern digital infrastructure.",
   },
   alternates: {
-    canonical: "https://lexci.in/capabilities",
+    canonical: "https://www.lexci.in/capabilities",
   },
 };
 
