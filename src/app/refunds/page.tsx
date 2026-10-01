@@ -1,13 +1,18 @@
-"use client";
-
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+
+export const metadata: Metadata = {
+  title: "Refund & Cancellation Policy",
+  description:
+    "Refund and Cancellation Policy for Lexci Innovations — covering advance payments, project cancellations, milestone-based projects, and refund processing.",
+  alternates: {
+    canonical: "https://lexci.in/refunds",
+  },
+};
 
 export default function RefundsAndCancellationPage() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white selection:bg-white/90 selection:text-black" style={{ fontFamily: "'Poppins', sans-serif" }}>
-      <Navbar />
 
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[180px] pointer-events-none mix-blend-screen animate-gradient-drift" />

@@ -1,14 +1,32 @@
-"use client";
-
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Lexci Privacy Policy — learn how we collect, use, and protect your data across our cybersecurity and AI platforms. Enterprise-grade encryption and zero-trust architecture.",
+  keywords: [
+    "Lexci privacy policy",
+    "data protection",
+    "cybersecurity privacy",
+    "data security",
+    "GDPR compliance",
+  ],
+  openGraph: {
+    title: "Privacy Policy | Lexci",
+    description:
+      "Learn how Lexci collects, uses, and protects your data across our platforms and services.",
+    url: "https://lexci.in/privacy",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://lexci.in/privacy",
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-      <Navbar />
-
       {/* Hero Section */}
       <section className="pt-40 pb-20 px-6 md:px-10 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/[0.04] rounded-full blur-[150px] pointer-events-none" />
@@ -75,7 +93,8 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      <Footer />
+      {/* SHIMMER DIVIDER */}
+      <div className="shimmer-line opacity-50" />
     </div>
   );
 }

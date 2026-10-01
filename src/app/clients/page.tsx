@@ -1,10 +1,39 @@
+import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Brain, Building2, Quote, CheckCircle } from "lucide-react";
 
-export const metadata = {
-  title: "Clients | Lexci",
-  description: "Trusted by visionaries. Empowering the world's most innovative enterprises with autonomous defense and behavioral intelligence.",
+export const metadata: Metadata = {
+  title: "Clients & Case Studies",
+  description:
+    "Trusted by visionaries. See how Lexci empowers innovative enterprises with autonomous defense, behavioral intelligence, and elite engineering. Case studies from Onyx Edutech, Camplyft, NexGenTechno, and more.",
+  keywords: [
+    "Lexci clients",
+    "cybersecurity case studies",
+    "AI platform success stories",
+    "enterprise security clients",
+    "Onyx Edutech",
+    "Camplyft",
+    "NexGenTechno Consulting",
+    "Bidryde",
+    "Smart Clues",
+  ],
+  openGraph: {
+    title: "Lexci Clients & Success Stories",
+    description:
+      "Empowering the world's most innovative enterprises with autonomous defense, behavioral intelligence, and elite engineering capabilities.",
+    url: "https://lexci.in/clients",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lexci Clients & Success Stories",
+    description:
+      "Empowering innovative enterprises with autonomous defense and behavioral intelligence.",
+  },
+  alternates: {
+    canonical: "https://lexci.in/clients",
+  },
 };
 
 export default function ClientsPage() {

@@ -1,7 +1,42 @@
+import type { Metadata } from "next";
 import CyberShield from "@/components/CyberShield";
 import FadeIn from "@/components/FadeIn";
 import Link from "next/link";
 import { Shield, Eye, CloudCog, Siren, ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Cybersecurity Platform",
+  description:
+    "Lexci Cybersecurity — autonomous cyber defense with threat intelligence, zero-trust architecture, cloud security, and real-time incident response. Self-evolving protection for enterprise infrastructure.",
+  keywords: [
+    "cybersecurity platform",
+    "autonomous cyber defense",
+    "threat intelligence",
+    "zero trust security",
+    "cloud security platform",
+    "incident response",
+    "real-time threat detection",
+    "enterprise cybersecurity",
+    "AI security",
+    "Lexci cybersecurity",
+  ],
+  openGraph: {
+    title: "Lexci Cybersecurity — Autonomous Cyber Defense",
+    description:
+      "A self-evolving security system that continuously monitors, detects, and neutralizes threats in real-time.",
+    url: "https://lexci.in/platform/cybersecurity",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lexci Cybersecurity — Autonomous Cyber Defense",
+    description:
+      "A self-evolving security system that continuously monitors, detects, and neutralizes threats in real-time.",
+  },
+  alternates: {
+    canonical: "https://lexci.in/platform/cybersecurity",
+  },
+};
 
 export default function CybersecurityPage() {
   return (
