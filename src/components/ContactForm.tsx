@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Send, CheckCircle2 } from "lucide-react";
 
 export default function ContactForm() {
@@ -117,6 +118,17 @@ export default function ContactForm() {
                 {status === "loading" ? "Sending..." : "Send Message"}
                 <Send className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </button>
+
+            <p className="text-[11px] text-white/35 text-center font-light leading-relaxed">
+                By submitting, you agree to our{" "}
+                <Link href="/privacy" className="text-white/60 hover:text-white underline underline-offset-2 transition-colors">
+                    Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link href="/terms" className="text-white/60 hover:text-white underline underline-offset-2 transition-colors">
+                    Terms &amp; Conditions
+                </Link>.
+            </p>
         </form>
     );
 }

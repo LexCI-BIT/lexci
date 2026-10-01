@@ -51,12 +51,12 @@ export default function ClientsPage() {
               <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
               <span className="text-xs font-medium tracking-widest text-white/50 uppercase">Trusted by Visionaries</span>
             </div>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-8 leading-[1.05] max-w-4xl mx-auto">
+            <h1 className="hero-title font-semibold tracking-tight mb-8 max-w-4xl mx-auto">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">Partners</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-lg md:text-xl text-white/40 max-w-2xl mx-auto font-light leading-[1.8] mb-12">
+            <p className="lead-subtitle text-white/40 max-w-2xl mx-auto font-light mb-12">
               Empowering the world's most innovative enterprises with autonomous defense, behavioral intelligence, and elite engineering capabilities.
             </p>
           </FadeIn>
@@ -103,7 +103,7 @@ export default function ClientsPage() {
           <FadeIn>
             <div className="text-center mb-20">
               <span className="text-xs font-medium tracking-widest text-white/35 mb-4 block uppercase">Featured Work</span>
-              <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">Success Stories</h2>
+              <h2 className="section-title font-semibold tracking-tight">Success Stories</h2>
             </div>
           </FadeIn>
 
@@ -118,10 +118,10 @@ export default function ClientsPage() {
                   <span className="badge-pill !bg-blue-500/10 !text-blue-400 !border-blue-500/20 uppercase">Cybersecurity</span>
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/60 transition-all duration-500">
+                <h3 className="card-title font-semibold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/60 transition-all duration-500">
                   Securing Global Transactions for NexGenTechno Consulting
                 </h3>
-                <p className="text-white/40 text-sm md:text-base font-light leading-[1.8] mb-12 flex-grow">
+                <p className="body-text text-white/40 font-light mb-12 flex-grow">
                   NexGenTechno required a zero-trust architecture robust enough to handle complex consulting workflows while remaining imperceptible to end-users. Lexci deployed an autonomous defense grid that reduced incident response time to milliseconds.
                 </p>
 
@@ -148,10 +148,10 @@ export default function ClientsPage() {
                   <span className="badge-pill !bg-purple-500/10 !text-purple-400 !border-purple-500/20 uppercase">InMind AI</span>
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/60 transition-all duration-500">
+                <h3 className="card-title font-semibold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/60 transition-all duration-500">
                   Predictive Behavior Mapping for Camplyft
                 </h3>
-                <p className="text-white/40 text-sm md:text-base font-light leading-[1.8] mb-12 flex-grow">
+                <p className="body-text text-white/40 font-light mb-12 flex-grow">
                   Using our InMind behavioral intelligence suite, Camplyft optimized their platform operations, anticipating user drop-offs and preventing crucial systemic failures before they occurred.
                 </p>
 
@@ -177,7 +177,7 @@ export default function ClientsPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <FadeIn>
             <div className="text-center mb-20">
-              <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-6">Words of Trust</h2>
+              <h2 className="section-title font-semibold tracking-tight mb-6">Words of Trust</h2>
             </div>
           </FadeIn>
 
@@ -202,7 +202,7 @@ export default function ClientsPage() {
               <FadeIn delay={i * 0.15} key={i}>
                 <div className="glass-panel-sharp p-8 h-full flex flex-col relative group hover:bg-white/[0.05] transition-colors duration-500">
                   <Quote className="w-8 h-8 text-white/10 absolute top-6 right-6 group-hover:text-blue-400/20 transition-colors duration-500" />
-                  <p className="text-white/60 text-sm font-light leading-[1.8] mb-10 flex-grow pt-4">
+                  <p className="body-text text-white/60 font-light mb-10 flex-grow pt-4">
                     "{testimonial.quote}"
                   </p>
                   <div className="flex items-center gap-4 border-t border-white/5 pt-6 mt-auto">
@@ -226,12 +226,12 @@ export default function ClientsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(59,130,246,0.08)_0%,transparent_60%)]" />
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center relative z-10">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl font-semibold tracking-tight mb-8 leading-[1.1]">
+            <h2 className="section-title font-semibold tracking-tight mb-8">
               Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-white">transform</span> your enterprise?
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-white/40 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto leading-[1.8]">
+            <p className="lead-subtitle text-white/40 font-light mb-12 max-w-2xl mx-auto">
               Join the vanguard of secure, AI-driven organizations. Schedule an architecture review with our engineering team today.
             </p>
           </FadeIn>
@@ -241,8 +241,8 @@ export default function ClientsPage() {
                 <span className="font-semibold">Become a Partner</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link href="/contact" className="aiera-button inline-flex items-center gap-2 px-8 py-4 w-full sm:w-auto justify-center">
-                <span className="font-semibold">Request Platform Demo</span>
+              <Link href="/capabilities" className="aiera-button inline-flex items-center gap-2 px-8 py-4 w-full sm:w-auto justify-center">
+                <span className="font-semibold">Explore Capabilities</span>
               </Link>
             </div>
           </FadeIn>

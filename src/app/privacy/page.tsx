@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -35,10 +36,10 @@ export default function PrivacyPolicyPage() {
             <span className="text-[11px] font-medium tracking-[0.25em] text-white/40 uppercase mb-4 block">
               Legal Information
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6">
+            <h1 className="hero-title font-semibold tracking-tight mb-6">
               Privacy <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Policy</span>
             </h1>
-            <p className="text-white/40 text-sm md:text-base font-light leading-relaxed max-w-2xl mx-auto">
+            <p className="lead-subtitle text-white/40 font-light max-w-2xl mx-auto">
               Last updated: March 31, 2026. This Privacy Policy outlines how Lexci collects, uses, and protects your data across our platforms and services.
             </p>
           </FadeIn>
@@ -88,6 +89,11 @@ export default function PrivacyPolicyPage() {
             <h2>7. Changes to This Policy</h2>
             <p>
               This Privacy Policy may be updated periodically to reflect changes in our robust engineering practices or legal obligations. We will notify you of significant changes via our platform interface or standard email communication.
+            </p>
+
+            <h2>8. Related Legal Policies &amp; Contact</h2>
+            <p>
+              For additional details, please consult our <Link href="/terms">Terms &amp; Conditions</Link> and <Link href="/refunds">Refund &amp; Cancellation Policy</Link>. If you have questions regarding data privacy or security governance, reach out to our team via our <Link href="/contact">Contact Page</Link>.
             </p>
           </FadeIn>
         </div>

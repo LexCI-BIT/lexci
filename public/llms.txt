@@ -1,0 +1,33 @@
+# Lexci
+
+> AI-Powered Security Infrastructure for a Scalable World. A unified platform combining autonomous cybersecurity, artificial intelligence, and precision engineering systems to build, protect, and scale digital ecosystems.
+
+## Overview
+
+Lexci is an AI-native cybersecurity and intelligent systems engineering company headquartered in Bangalore and Hyderabad, India. The company combines autonomous artificial intelligence (InMind AI) with zero-trust architecture to defend enterprise infrastructure against digital threats while delivering full-lifecycle digital engineering solutions.
+
+## Core Products & Platforms
+
+- [Cybersecurity Platform](https://www.lexci.in/platform/cybersecurity): Autonomous threat detection, zero-trust network architecture, Linux eBPF kernel telemetry, predictive neural threat intelligence, and sub-millisecond incident containment.
+- [InMind AI Platform](https://in-mind-app.vercel.app/): Behavioral intelligence and adaptive AI systems predicting user interactions, identifying lateral network anomalies, and automating mitigation.
+- [Engineering Capabilities](https://www.lexci.in/capabilities): Full-spectrum engineering services including high-throughput web development (Next.js, React, TypeScript), cross-platform mobile apps (Flutter, React Native), enterprise LMS platforms, cloud-native architectures (AWS, Azure, GCP, Kubernetes), and custom LLM / AI integrations.
+
+## Company & Architecture
+
+- [About Us](https://www.lexci.in/about): The core pillars of Lexci (Cybersecurity, Intelligent Systems, Engineering), security research laboratories, continuous defense methodology, and company philosophy.
+- [Clients & Case Studies](https://www.lexci.in/clients): Enterprise success stories and case studies from partners including Onyx Edutech, Onyx EduVoyage, Camplyft, Bidryde, Evacodes, Smart Clues, and NexGenTechno Consulting.
+- [Contact & Consultations](https://www.lexci.in/contact): Inquire about enterprise security assessments, platform demonstrations, architectural scoping, and partnerships. Offices in HSR Layout (Bangalore) and HITEC City (Hyderabad).
+
+## Legal & Compliance
+
+- [Privacy Policy](https://www.lexci.in/privacy): Enterprise-grade encryption standards (AES-256 at rest, TLS 1.3 in transit), zero-trust data compartmentalization, and regulatory alignment with the DPDP Act (India) and GDPR.
+- [Terms & Conditions](https://www.lexci.in/terms): Service terms, code ownership policies, intellectual property rights, and governing laws.
+- [Refund & Cancellation Policy](https://www.lexci.in/refunds): Milestone-based project policies, service delivery standards, and cancellation guidelines.
+
+## Technical Specifications
+
+- Architecture: Zero-Trust Network Access (ZTNA), Linux eBPF telemetry, micro-segmented software-defined perimeter
+- Response Latency: Sub-5ms autonomous threat response
+- Uptime SLA: 99.99% high-availability enterprise SLA
+- Compliance: ISO/IEC 27001, SOC 2 Type II readiness, DPDP Act (India), GDPR
+- Contact Email: lexciinnovation@gmail.com, hr@lexci.in, info@lexci.in

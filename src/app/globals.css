@@ -64,6 +64,31 @@ body::after {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  /* Standardized Typography Scale */
+  .hero-title, h1.hero-title {
+    font-size: clamp(3rem, 5vw, 4rem); /* 48px – 64px (3rem – 4rem) */
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+  .section-title, h2.section-title {
+    font-size: clamp(2.25rem, 3.5vw, 2.75rem); /* 36px – 44px (2.25rem – 2.75rem) */
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .lead-subtitle, p.lead-subtitle {
+    font-size: clamp(1.125rem, 1.5vw, 1.375rem); /* 18px – 22px (1.125rem – 1.375rem) */
+    line-height: 1.65;
+  }
+  .card-title, h3.card-title, h4.card-title {
+    font-size: clamp(1.25rem, 1.75vw, 1.5rem); /* 20px – 24px (1.25rem – 1.5rem) */
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+  }
+  .body-text, p.body-text {
+    font-size: clamp(1rem, 1.25vw, 1.125rem); /* 16px – 18px (1rem – 1.125rem) */
+    line-height: 1.75;
+  }
   /* Premium card with animated gradient border on hover */
   .premium-card {
     @apply relative overflow-hidden rounded-2xl transition-all duration-500;

@@ -133,6 +133,9 @@ export default function Navbar() {
           <Link href="/clients" className="block px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/[0.04] transition-all font-medium" onClick={() => setIsOpen(false)}>
             Clients
           </Link>
+          <Link href="/about" className="block px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/[0.04] transition-all font-medium" onClick={() => setIsOpen(false)}>
+            About Us
+          </Link>
           <Link href="/contact" className="block px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/[0.04] transition-all font-medium" onClick={() => setIsOpen(false)}>
             Contact
           </Link>

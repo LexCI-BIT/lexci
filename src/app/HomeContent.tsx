@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "@/components/FadeIn";
-import { Shield, Brain, Globe, BookOpen, Smartphone, Cloud, Lock, Zap } from "lucide-react";
+import { Shield, Brain, Globe, BookOpen, Smartphone, Cloud, Lock, Zap, ChevronDown, HelpCircle } from "lucide-react";
 import CyberShield from "@/components/CyberShield";
 import CyberBrain from "@/components/CyberBrain";
 export default function HomeContent() {
@@ -75,18 +75,24 @@ export default function HomeContent() {
           </span>
 
           {/* Right: Nav pills (desktop) */}
-          <div className="hidden md:flex items-center gap-3">
-            <Link href="/about" className="px-5 py-2.5 rounded-full border border-white/30 text-white text-sm font-medium hover:bg-white/10 transition-all">
-              About Us
+          <div className="hidden md:flex items-center gap-2.5">
+            <Link href="/platform/cybersecurity" className="px-4 py-2 rounded-full border border-white/20 text-white/80 text-sm font-medium hover:text-white hover:bg-white/10 transition-all">
+              Platform
             </Link>
-            <Link href="#services" className="px-5 py-2.5 rounded-full border border-white/30 text-white text-sm font-medium hover:bg-white/10 transition-all">
-              Services
+            <Link href="/capabilities" className="px-4 py-2 rounded-full border border-white/20 text-white/80 text-sm font-medium hover:text-white hover:bg-white/10 transition-all">
+              Capabilities
+            </Link>
+            <Link href="/clients" className="px-4 py-2 rounded-full border border-white/20 text-white/80 text-sm font-medium hover:text-white hover:bg-white/10 transition-all">
+              Clients
+            </Link>
+            <Link href="/about" className="px-4 py-2 rounded-full border border-white/20 text-white/80 text-sm font-medium hover:text-white hover:bg-white/10 transition-all">
+              About
             </Link>
             <Link
               href="/contact"
-              className="px-5 py-2.5 rounded-full text-black text-sm font-medium uppercase bg-gradient-to-r from-[hsl(220,70%,78%)] to-[hsl(40,80%,82%)] hover:opacity-90 transition-all"
+              className="px-5 py-2 rounded-full text-black text-sm font-medium uppercase bg-gradient-to-r from-[hsl(220,70%,78%)] to-[hsl(40,80%,82%)] hover:opacity-90 transition-all"
             >
-              Get Started
+              Contact
             </Link>
           </div>
         </nav>
@@ -204,12 +210,12 @@ export default function HomeContent() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between">
             {/* Heading */}
             <div className="max-w-2xl">
-              <h1 className="leading-[0.95] -tracking-[0.03em] mb-6" style={{ fontSize: "clamp(1.8rem, 5vw, 4rem)", fontFamily: "'Poppins', sans-serif" }}>
+              <h1 className="hero-title mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 <span className="block font-light">AI-Powered Security</span>
                 <span className="block font-light">Infrastructure for a</span>
                 <span className="block mt-2" style={{ fontFamily: "'Gilda Display', serif" }}>Scalable World</span>
               </h1>
-              <p className="text-white/50 text-sm md:text-[15px] font-light leading-[1.8] max-w-lg mb-8" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              <p className="lead-subtitle text-white/50 font-light max-w-lg mb-8" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 A unified platform combining cybersecurity, artificial intelligence, and engineering systems to build, protect, and scale digital ecosystems.
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-3">
@@ -311,10 +317,10 @@ export default function HomeContent() {
             <FadeIn>
               <div className="mb-14 md:mb-16 max-w-xl">
                 <span className="text-[11px] font-medium tracking-[0.2em] text-white/30 mb-4 block">CORE PRODUCTS</span>
-                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
+                <h2 className="section-title font-semibold tracking-tight mb-4">
                   The Lexci <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Platform</span>
                 </h2>
-                <p className="text-white/35 text-sm font-light leading-[1.8]">
+                <p className="lead-subtitle text-white/40 font-light">
                   Two integrated systems. One intelligent infrastructure designed to protect, analyze, and scale your digital operations.
                 </p>
               </div>
@@ -331,8 +337,8 @@ export default function HomeContent() {
                       </div>
                       <span className="text-[11px] font-medium tracking-[0.15em] text-white/30">SECURITY</span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-white">Cybersecurity</h3>
-                    <p className="text-white/35 text-sm mb-6 font-light leading-[1.8] max-w-sm">
+                    <h3 className="card-title font-semibold mb-3 text-white">Cybersecurity</h3>
+                    <p className="body-text text-white/40 mb-6 font-light max-w-sm">
                       Autonomous threat detection, zero-trust architecture, and real-time defense systems for enterprise scale.
                     </p>
                   </div>
@@ -359,8 +365,8 @@ export default function HomeContent() {
                       </div>
                       <span className="text-[11px] font-medium tracking-[0.15em] text-white/30">INTELLIGENCE</span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-white">InMind AI</h3>
-                    <p className="text-white/35 text-sm mb-6 font-light leading-[1.8] max-w-sm">
+                    <h3 className="card-title font-semibold mb-3 text-white">InMind AI</h3>
+                    <p className="body-text text-white/40 mb-6 font-light max-w-sm">
                       Behavioral intelligence and mental wellness powered by adaptive AI systems for modern organizations.
                     </p>
                   </div>
@@ -390,10 +396,10 @@ export default function HomeContent() {
               <FadeIn>
                 <div className="max-w-xl">
                   <span className="text-[11px] font-medium tracking-[0.2em] text-white/30 mb-4 block">SERVICES</span>
-                  <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
+                  <h2 className="section-title font-semibold tracking-tight mb-4">
                     Engineering <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Capabilities</span>
                   </h2>
-                  <p className="text-white/35 text-sm font-light leading-[1.8] mb-6">
+                  <p className="lead-subtitle text-white/40 font-light mb-6">
                     Full-spectrum engineering services designed for modern digital infrastructure.
                   </p>
                   <div className="flex items-center gap-6 text-[11px] font-medium tracking-[0.15em] text-white/25">
@@ -427,35 +433,178 @@ export default function HomeContent() {
                       <div className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.07] flex items-center justify-center mb-4 transition-all duration-500 group-hover:bg-white/[0.08] group-hover:border-white/[0.12]">
                         <cap.icon className={`w-3.5 h-3.5 transition-colors duration-500 ${cap.iconColor}`} />
                       </div>
-                      <h4 className="text-sm font-semibold text-white mb-1.5">{cap.title}</h4>
-                      <p className="text-[12px] text-white/30 leading-[1.7] font-light">{cap.desc}</p>
+                      <h3 className="card-title font-semibold text-white mb-1.5">{cap.title}</h3>
+                      <p className="body-text text-white/40 font-light">{cap.desc}</p>
                     </div>
                   </div>
                 </FadeIn>
               ))}
             </div>
+
+            <FadeIn delay={0.3}>
+              <div className="mt-12 text-center">
+                <Link
+                  href="/capabilities"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white/70 hover:text-white transition-colors group px-6 py-3 rounded-full border border-white/10 hover:border-white/30 bg-white/[0.02]"
+                >
+                  Explore All Engineering Capabilities &amp; System Architectures
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </FadeIn>
           </div>
           <div className="shimmer-line mt-24 md:mt-32" />
         </section>
 
-        {/* CLIENTS */}
-        <section className="py-20 md:py-24 bg-black overflow-hidden" aria-label="Trusted clients">
+        {/* CLIENTS / TRUST LAYER */}
+        <section className="py-20 md:py-24 bg-black overflow-hidden relative" aria-label="Trusted clients">
           <FadeIn>
-            <div className="text-center mb-10">
-              <span className="text-[11px] font-medium tracking-[0.2em] text-white/30 mb-3 block">TRUST LAYER</span>
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">Powering Modern Brands</h2>
-              <p className="text-white/25 text-sm font-light">Trusted by digital-first organizations worldwide.</p>
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/[0.03] mb-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+                <span className="text-xs font-medium tracking-[0.2em] text-white/70 uppercase">Trust Layer</span>
+              </div>
+              <h2 className="section-title font-semibold tracking-tight text-white mb-3">
+                Powering Modern Brands &amp; Enterprises
+              </h2>
+              <p className="lead-subtitle text-white/60 font-light max-w-xl mx-auto">
+                Trusted by digital-first organizations and forward-thinking enterprises worldwide.
+              </p>
             </div>
           </FadeIn>
           <div className="relative w-full flex overflow-x-hidden py-4">
-            <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
-            <div className="animate-marquee whitespace-nowrap flex items-center space-x-8 px-4">
-              {["Onyx Edutech", "Onyx EduVoyage", "Camplyft", "Bidryde", "Evacodes", "Smart Clues", "NexGenTechno"].map((c, i) => (
-                <span key={i} className="text-xl md:text-2xl font-medium text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.1)] tracking-wide px-4 hover:text-white hover:[-webkit-text-stroke:1px_transparent] transition-all duration-500 cursor-default">{c}</span>
+            <div className="absolute left-0 top-0 bottom-0 w-32 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-32 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+            <div className="animate-marquee whitespace-nowrap flex items-center space-x-6 md:space-x-8 px-4">
+              {[
+                "Onyx Edutech",
+                "Onyx EduVoyage",
+                "Camplyft",
+                "Bidryde",
+                "Evacodes",
+                "Smart Clues",
+                "NexGenTechno Consulting",
+              ].map((client, i) => (
+                <div
+                  key={i}
+                  className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/15 bg-white/[0.04] hover:border-white/30 hover:bg-white/[0.08] transition-all duration-300 group cursor-default shadow-sm"
+                >
+                  <span className="relative flex h-2 w-2 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500 shadow-[0_0_8px_rgba(168,85,247,0.9)]" />
+                  </span>
+                  <span className="text-base md:text-lg font-medium tracking-wide text-white/90 group-hover:text-white transition-colors">
+                    {client}
+                  </span>
+                </div>
               ))}
-              {["Onyx Edutech", "Onyx EduVoyage", "Camplyft", "Bidryde", "Evacodes", "Smart Clues", "NexGenTechno"].map((c, i) => (
-                <span key={`d-${i}`} className="text-xl md:text-2xl font-medium text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.1)] tracking-wide px-4 hover:text-white hover:[-webkit-text-stroke:1px_transparent] transition-all duration-500 cursor-default">{c}</span>
+              {[
+                "Onyx Edutech",
+                "Onyx EduVoyage",
+                "Camplyft",
+                "Bidryde",
+                "Evacodes",
+                "Smart Clues",
+                "NexGenTechno Consulting",
+              ].map((client, i) => (
+                <div
+                  key={`dup-${i}`}
+                  className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/15 bg-white/[0.04] hover:border-white/30 hover:bg-white/[0.08] transition-all duration-300 group cursor-default shadow-sm"
+                >
+                  <span className="relative flex h-2 w-2 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500 shadow-[0_0_8px_rgba(168,85,247,0.9)]" />
+                  </span>
+                  <span className="text-base md:text-lg font-medium tracking-wide text-white/90 group-hover:text-white transition-colors">
+                    {client}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <FadeIn delay={0.2}>
+            <div className="mt-8 text-center">
+              <Link
+                href="/clients"
+                className="inline-flex items-center gap-2 text-sm font-medium text-white/70 hover:text-white transition-colors group px-6 py-3 rounded-full border border-white/10 hover:border-white/30 bg-white/[0.02]"
+              >
+                View Detailed Client Case Studies &amp; Success Stories
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+          </FadeIn>
+        </section>
+
+        {/* FREQUENTLY ASKED QUESTIONS (FAQ) */}
+        <section className="py-24 md:py-32 bg-black relative border-t border-white/[0.06]" aria-label="Frequently Asked Questions">
+          <div className="max-w-5xl mx-auto px-6 md:px-8 relative z-10">
+            <FadeIn>
+              <div className="text-center mb-16 max-w-3xl mx-auto">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] text-white/60 text-xs uppercase tracking-widest mb-4">
+                  <HelpCircle className="w-3.5 h-3.5 text-blue-400" />
+                  <span>Frequently Asked Questions</span>
+                </div>
+                <h2 className="section-title font-semibold tracking-tight mb-5">
+                  Everything You Need to Know About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300">Lexci</span>
+                </h2>
+                <p className="lead-subtitle text-white/40 font-light">
+                  Discover how our autonomous cybersecurity architecture, InMind AI platform, and full-stack engineering services safeguard and scale modern enterprise infrastructure.
+                </p>
+              </div>
+            </FadeIn>
+
+            <div className="space-y-4">
+              {[
+                {
+                  question: "What is Lexci and how does our AI-powered security infrastructure work?",
+                  answer: "Lexci is a specialized cybersecurity and intelligent systems engineering firm headquartered in Bangalore and Hyderabad, India. Our proprietary platform combines autonomous artificial intelligence (InMind AI) with zero-trust network architecture to defend modern enterprise infrastructure against sophisticated digital threats. Rather than relying on static firewall rules and outdated signature databases, Lexci operates dynamically by monitoring network telemetry, analyzing behavioral patterns, and executing automated containment protocols with sub-millisecond precision."
+                },
+                {
+                  question: "How does InMind AI differ from conventional enterprise cybersecurity tools?",
+                  answer: "Legacy cybersecurity software reacts only after a known attack signature is detected or manual intervention occurs, leaving systems vulnerable to zero-day vulnerabilities, polymorphism, and credential hijacking. Lexci's InMind AI functions as an autonomous behavioral neural layer. It continuously learns baseline organizational behavior across users, microservices, APIs, and data transactions. When abnormal activity or unauthorized lateral movement is detected, InMind AI instantly isolates compromised nodes and mitigates the threat before sensitive data can be accessed or exfiltrated."
+                },
+                {
+                  question: "What custom engineering, web, and mobile app development services does Lexci provide?",
+                  answer: "Beyond our security infrastructure platform, Lexci provides full-lifecycle engineering services for high-growth startups and global enterprises. Our engineering capabilities include high-throughput web application development, cross-platform mobile apps for iOS and Android, enterprise cloud architecture on AWS and Microsoft Azure, API design, microservices orchestration, and custom artificial intelligence pipelines. Every digital product engineered by Lexci is designed with built-in zero-trust security and high-concurrency performance from day one."
+                },
+                {
+                  question: "Can Lexci integrate with existing cloud providers and legacy on-premise networks?",
+                  answer: "Yes. Lexci is architected with a cloud-agnostic, modular structure that seamlessly integrates into diverse enterprise environments. Whether your systems are deployed across Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure, hybrid cloud setups, or private on-premise data centers, Lexci connects via non-intrusive API gateways, containerized agents, and webhook feeds. Our deployment model ensures zero downtime during installation and requires no disruptive modifications to your existing production codebases."
+                },
+                {
+                  question: "How does Lexci assist enterprises with data privacy and compliance standards?",
+                  answer: "Data governance and compliance are central to Lexci's architecture. Our security framework is engineered to align with major international and domestic data protection regulations, including the Digital Personal Data Protection Act (DPDP India), General Data Protection Regulation (GDPR), ISO/IEC 27001, and SOC 2 Type II readiness. We incorporate end-to-end cryptographic encryption for data in transit and at rest, granular identity and access management (IAM), and automated, tamper-evident audit logging for regulatory reviews."
+                },
+                {
+                  question: "How does Lexci ensure zero-trust architecture against ransomware and insider threats?",
+                  answer: "Under a zero-trust model, no user, device, or internal service is implicitly trusted, regardless of whether the request originates from inside or outside the enterprise perimeter. Lexci enforces continuous authentication, micro-segmentation, and dynamic least-privilege access across all digital assets. In the event of an attempted ransomware attack or unauthorized insider access, strict perimeter boundaries isolate the affected component immediately, preventing horizontal lateral movement and protecting critical databases."
+                },
+                {
+                  question: "How can our organization get started with an initial assessment or consultation?",
+                  answer: "Starting with Lexci is streamlined and collaborative. You can initiate contact through our inquiry form or schedule a demonstration with our engineering team. We begin by reviewing your current infrastructure topology, threat profile, and technical objectives. From there, we deliver a targeted assessment along with a proposed implementation roadmap—ranging from rapid security penetration audits to custom software and cloud infrastructure development tailored to your timeline and scale."
+                },
+                {
+                  question: "What is Lexci's methodology for proactive vulnerability testing and attack simulations?",
+                  answer: "Lexci utilizes automated adversarial attack simulations and continuous penetration testing frameworks to test enterprise networks against real-world threat actor tactics. Instead of waiting for scheduled annual or quarterly audits, our platform continuously evaluates configuration integrity, exposed cryptographic endpoints, API vulnerabilities, and authentication bypass risks. Each automated assessment generates prioritized remediation guidelines and compliance proof to harden your perimeter against emerging cyber threats."
+                },
+                {
+                  question: "How does Lexci handle distributed cloud infrastructure scalability and high concurrency?",
+                  answer: "Our engineering architecture is developed from the ground up for massive horizontal concurrency, fault-tolerant reliability, and sub-millisecond response times. Leveraging distributed Kubernetes clusters, edge-computing nodes, and serverless compute pipelines across global regions, Lexci ensures that enterprise systems automatically scale computational capacity in direct response to traffic surges. We implement intelligent load distribution, automated database sharding, connection pooling, and multi-tier caching to maintain 99.99% operational availability under intense enterprise workloads."
+                }
+              ].map((faq, index) => (
+                <FadeIn delay={index * 0.05} key={index}>
+                  <details className="group border border-white/[0.08] hover:border-white/20 rounded-2xl bg-white/[0.02] p-6 transition-all duration-300">
+                    <summary className="cursor-pointer list-none flex items-center justify-between text-left text-white/90 group-hover:text-white transition-colors">
+                      <span className="card-title font-medium pr-4">{faq.question}</span>
+                      <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center shrink-0 text-white/50 group-open:rotate-180 transition-transform duration-300 group-hover:border-white/25">
+                        <ChevronDown className="w-4 h-4" />
+                      </div>
+                    </summary>
+                    <div className="body-text pt-4 text-white/50 font-light border-t border-white/[0.04] mt-4">
+                      <p>{faq.answer}</p>
+                    </div>
+                  </details>
+                </FadeIn>
               ))}
             </div>
           </div>
@@ -472,10 +621,10 @@ export default function HomeContent() {
                 <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center mx-auto mb-6">
                   <Zap className="w-5 h-5 text-white/50" />
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
+                <h2 className="section-title font-semibold tracking-tight mb-4">
                   Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300">get started?</span>
                 </h2>
-                <p className="text-white/35 text-sm font-light leading-[1.8] mb-8">
+                <p className="lead-subtitle text-white/40 font-light mb-8">
                   Join the next generation of enterprises building on secure, intelligent infrastructure.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
