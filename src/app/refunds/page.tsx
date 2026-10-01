@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Refund & Cancellation Policy",
@@ -24,10 +25,10 @@ export default function RefundsAndCancellationPage() {
               <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
               <span className="text-xs font-medium tracking-widest text-white/50 uppercase">Legal Information</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-6 leading-tight">
+            <h1 className="hero-title font-semibold tracking-tight mb-6">
               Refund & <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-300">Cancellation</span>
             </h1>
-            <p className="text-white/40 text-lg md:text-xl font-light max-w-3xl leading-relaxed">
+            <p className="lead-subtitle text-white/40 font-light max-w-3xl">
               Effective Date: August 6, 2026. This policy explains how refunds and cancellations are handled for Lexci services and projects.
             </p>
           </FadeIn>
@@ -142,14 +143,18 @@ export default function RefundsAndCancellationPage() {
                   Refunds will not be provided for delays or interruptions caused by events beyond our reasonable control, including natural disasters, government restrictions, internet outages, cyberattacks, strikes, or other force majeure events.
                 </p>
 
-                <h2>16. Contact for Refund Requests</h2>
+                <h2>16. Contact for Refund Requests &amp; Related Policies</h2>
                 <p>All refund or cancellation requests must be submitted in writing to:</p>
                 <p>
                   <strong>Lexci Innovations</strong>
                   <br />
-                  Website: <a href="http://www.lexci.in/">www.lexci.in</a>
+                  Website: <Link href="/">www.lexci.in</Link>
                   <br />
                   Email: <a href="mailto:info@lexci.in">info@lexci.in</a>
+                  <br />
+                  Direct Consultation: <Link href="/contact">Contact Page</Link>
+                  <br />
+                  Policies: <Link href="/terms">Terms &amp; Conditions</Link> | <Link href="/privacy">Privacy Policy</Link>
                 </p>
                 <p>Please include client name, project or invoice number, date of payment, and reason for cancellation or refund request.</p>
 

@@ -98,7 +98,7 @@ export default function RootLayout({
         <Footer />
         
         {/* Chatling AI Chatbot Integration */}
-        <Script id="chatling-config" strategy="afterInteractive">
+        <Script id="chatling-config" strategy="lazyOnload">
           {`window.chtlConfig = { chatbotId: "7646939173" }`}
         </Script>
         <Script
@@ -106,7 +106,7 @@ export default function RootLayout({
           data-id="7646939173"
           id="chtl-script"
           src="https://chatling.ai/js/embed.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -24,10 +25,10 @@ export default function TermsAndConditionsPage() {
               <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
               <span className="text-xs font-medium tracking-widest text-white/50 uppercase">Legal Information</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-6 leading-tight">
+            <h1 className="hero-title font-semibold tracking-tight mb-6">
               Terms & <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-300">Conditions</span>
             </h1>
-            <p className="text-white/40 text-lg md:text-xl font-light max-w-3xl leading-relaxed">
+            <p className="lead-subtitle text-white/40 font-light max-w-3xl">
               Effective Date: August 6, 2026. These terms define how Lexci services, content, and projects are used and governed.
             </p>
           </FadeIn>
@@ -168,14 +169,18 @@ export default function TermsAndConditionsPage() {
                 <p>Lexci Innovations may update these Terms & Conditions at any time without prior notice.</p>
                 <p>The latest version published on this website will be considered the current and applicable version.</p>
 
-                <h2>20. Contact Information</h2>
-                <p>For any questions regarding these Terms & Conditions, please contact:</p>
+                <h2>20. Contact Information &amp; Related Policies</h2>
+                <p>For any questions regarding these Terms &amp; Conditions, please contact us or review our related policies:</p>
                 <p>
                   <strong>Lexci Innovations</strong>
                   <br />
-                  Website: <a href="http://www.lexci.in/">www.lexci.in</a>
+                  Website: <Link href="/">www.lexci.in</Link>
                   <br />
                   Email: <a href="mailto:info@lexci.in">info@lexci.in</a>
+                  <br />
+                  Direct Consultation: <Link href="/contact">Contact Page</Link>
+                  <br />
+                  Policies: <Link href="/privacy">Privacy Policy</Link> | <Link href="/refunds">Refund &amp; Cancellation Policy</Link>
                 </p>
                 <p>By continuing to use our website or services, you acknowledge that you have read, understood, and agreed to these Terms & Conditions.</p>
               </div>
