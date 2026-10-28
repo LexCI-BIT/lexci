@@ -209,7 +209,7 @@ export default function HomeContent() {
           {/* Heading + Stats */}
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between">
             {/* Heading */}
-            <div className="max-w-2xl">
+            <div className="max-w-[450px]">
               <h1 className="hero-title mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 <span className="block font-light">AI-Powered Security</span>
                 <span className="block font-light">Infrastructure for a</span>
